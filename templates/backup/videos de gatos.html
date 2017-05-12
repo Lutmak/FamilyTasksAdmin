@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!-- declaramos el documento como html5 --> 
+<html lang="es"> <!-- Informacion para los navegadores --> 
+	<head>  <!-- datos para el navegador, hojas de estilos, o scripts --> 
+		<meta charset= 'UTF-8'> <!-- metadatos= info para el navegaro cuando renderisa, hay muchos, ver cuales hay. el UTF-8 es para ascii con acentos --> 
+		<link rel="stylesheet" href="stylesheet.css"> <!-- linkeamos la hoja de datos css --> 
+	</head>
+
+	<body> <!-- Toda la info que esta en la pagina --> 
+		<div id="contenido"> <!-- div principal que teiene todo, se puede poner o no --> 
+			<header> <!-- indica el encabezado de la pagina --> 
+				<hgroup> <!-- Para que el navegador sepa que este es un titulo y nos pueda encontrar mas facilmente sin confundirse --> 
+					<h1>PROBANDO HTML5</h1>
+				</hgroup>
+				<div id="lista">
+					<nav> <!-- Para que puedan ingresar a alguna pagina en especifico desde el navegador --> 
+						<ul> <!-- lista desordenada, esta lista va dentro de el header --> 
+							<li>Inicio</li>
+							<li>Sobre mi</li>
+							<li>Videos de gatitos</li>
+							<li>Contacto</li>
+						</ul>	
+					</nav>
+				</div>
+			</header>
+			<section> <!-- para seo, adentro de eso los div que queramos --> 
+				<div id="textoprincipal">
+					<article>       <!--  --> 
+						<hgroup>  <!-- otro titulo que reconoce el navegador gracias a que con esto agrupamos los titulos con los que nos encuentran--> 
+							<h1>Principio de responsive</h1>
+						</hgroup>
+						<div class= "imagen">
+						<picture>
+							<source srcset = "imagenes/spaceman.png" media= "(min-width: 1200px)"><!-- si se cumple "min-width" carga esta imagen, srcset es la condicion para que lo haga -->
+							<source srcset = "imagenes/cerebro.png" ><!-- lee por defecto esta imagen--> 
+						<img srcset = 	
+						</picture>
+						</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<canvas id='canvas'>
+				
+			</canvas>
+		</footer>
+	</body>
+<html>

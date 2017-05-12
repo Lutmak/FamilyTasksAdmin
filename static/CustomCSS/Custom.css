@@ -1,0 +1,76 @@
+body {
+  font-family: 'Arsenal', sans-serif;
+  font-size: 16px
+}
+.sidebar .user {
+  padding-bottom: 20px;
+  margin: 20px auto 0;
+  position: relative;
+}
+.sidebar .user:after, {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  height: 1px;
+  width: calc(100% - 50%);
+  background-color: rgba(180, 180, 180, 0.3);
+}
+.sidebar .user .photo,
+.panel-default .photo {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  
+}
+.sidebar .user .photo img,
+.panel-default .photo img {
+  width: 100%;
+  position: relative;
+}
+.sidebar .user a {
+  text-align: center;
+  padding: 6px 10px;
+  text-align: center;
+  display: block;
+  white-space: nowrap;
+}
+
+/*fullcalendar - drag box*/
+#external-events {
+  border: 1px solid #ccc;
+  background: #eee;
+  text-align: center;
+}
+    
+#external-events h4 {
+  font-size: 16px;
+  margin-top: 0;
+  padding-top: 1em;
+}
+    
+#external-events .fc-event {
+  margin: 10px 0;
+  cursor: pointer;
+}
+    
+#external-events p {
+  margin: 1.5em 0;
+  font-size: 11px;
+  color: #666;
+}
+    
+#external-events p input {
+  margin: 0;
+  vertical-align: middle;
+}
+
+
+/*fullcalendar*/
+
+
+/*PERFIL*/
+/*comparte con sidebar*/

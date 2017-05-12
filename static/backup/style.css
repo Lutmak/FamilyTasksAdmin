@@ -1,0 +1,177 @@
+html
+{
+	position:relative;
+	height: 100%;
+	width: 100%;
+}
+
+body
+{
+	background-image: url("imagenes/banner.jpg"); /**/
+	background-repeat: no-repeat; /*estos 3 atributos hacen el fondo estatico aunque demos scroll down*/
+	background-attachment: fixed; /**/
+	background-size: cover; /* para que la imagen quede en todo el fondo bien chido*/ 
+	font-family: "helvetica";
+	margin:0 0 0 0;
+	margin-bottom: 0px;
+	height: 
+
+}
+
+#contenido 
+{
+	text-align:center;
+	position: relative;
+	border: solid;
+	height: 1500px;
+	margin:0;
+	padding-left: 10%;
+	padding-right: 10%;
+
+
+}
+header h1
+{
+	color:cyan;
+	-webkit-margin-before: 5%;
+    -webkit-margin-after: 5%;
+    -webkit-margin-start: 33%;
+    -webkit-margin-end: 33%;
+    background-color: black;
+    min-height: 100%;
+    height: 1.1em;
+}
+h1
+{
+	color:cyan;
+	height: 20%;
+	min-height: 100%;
+	height: 1.1em;
+	display:inline-block;
+
+}
+#lista
+{
+	background-color: cyan;
+	border-radius: 15px;
+	position: relative;
+	border: solid;
+	margin-bottom: 3em;
+	margin-left: 17%;
+	margin-right: 17%;
+	min-width: 66%;
+	width: 66%;
+	height: 20%;
+	max-height: 3em;
+	float: center;
+	overflow: hidden;
+}
+nav ul li
+{
+	display: inline;
+	margin-right: 5%;
+	cursor: pointer;
+}
+#textoprincipal
+{
+	background-image: url("imagenes/header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: White;
+	width: 100%;
+	height: 400px;
+	margin:0 auto;
+	position:relative;
+	border-radius: 15px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.5); /*para la sombra en la caja orden:los primeros 2 distancia, tercero el blur, el cuarto los canales de color(ultimo es el alfa, transparencia);*/
+	margin-bottom: 15px;
+}
+a
+{
+	color:black;
+}
+#habilidades
+{
+	width:400px;
+	height:150px;
+	background-color: black;
+	color: red;
+	margin:0 auto;
+	border-radius: 15px;
+	padding: 15px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+	text-align: left;
+}
+meter::-webkit-meter-bar 
+{
+	width: 160px;
+	height:15px;
+	background: none;
+	background-color: whitesmoke;
+	border-radius: 15px;
+	box-shadow: 0 5px 5px -5px #666 inset;
+	margin-left: 20px;
+	ma
+}
+meter::-webkit-meter-optimum-value
+{
+	background-image: linear-gradient(90deg,red 25%,blue 50%, cyan 75%, rgba (0,0,0,.5));
+	background-size: 100% 100%;
+	border-radius: 15px;
+}
+
+label
+{
+	display: block;
+}
+#botonDatos
+{
+	border-radius: none;
+	background-color: cyan;
+	border-radius: 13px;
+	height: 35px;
+	width: 80px;
+	padding:4px;
+	margin:20px;
+	cursor: pointer;
+}
+#calificacion
+{
+	width: 150px;
+	-webkit-appearance:none;
+	background-color: black;
+	height: 20px;
+	border-radius: 15px;
+	cursor:pointer;
+}
+#calificacion::-webkit-slider-thumb
+{
+	-webkit-appearance:none;
+	background-color: cyan;
+	border-radius:5px;
+	height: 15px;
+	width:10px;
+}
+#picture
+{
+	max-width: 800px;
+	max-height: 1000px;
+}
+
+#contenedorfooter
+{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+
+	background-color: black;
+	position: relative;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+.imagen
+{
+	webkitshapeinside:rectangle (0,0,100%,100%,50px,50px);
+	overflow: hidden;
+}

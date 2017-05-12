@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- declaramos el documento como html5 --> 
+<html lang="es"> <!-- Informacion para los navegadores --> 
+  <head>  <!-- datos para el navegador, hojas de estilos, o scripts --> 
+    <Title>Control casas</Title>
+    <meta charset= 'UTF-8'> <!-- metadatos= info para el navegaro cuando renderisa, hay muchos, ver cuales hay. el UTF-8 es para ascii con acentos --> 
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> <!-- linkeamos la hoja de datos css --> 
+  </head>
+
+  <body> <!-- Toda la info que esta en la pagina --> 
+    <div id="contenido"> <!-- div principal que teiene todo, se puede poner o no --> 
+      <header> <!-- indica el encabezado de la pagina --> 
+        <hgroup> <!-- Para que el navegador sepa que este es un titulo y nos pueda encontrar mas facilmente sin confundirse --> 
+          <h1>Control Tareas En Casa</h1>
+        </hgroup>
+        <div id="lista">
+          <nav> <!-- Para que puedan ingresar a alguna pagina en especifico desde el navegador --> 
+            <ul> <!-- lista desordenada, esta lista va dentro de el header --> 
+              <a href="/"><li>Usuario</li></a>
+              <a href="/{{email}}/actividades"><li>actividades</li></a>
+              <li>Multas</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section> <!-- para seo, adentro de eso los div que queramos --> 
+        <div id="textoprincipal">
+          <article>       <!--  --> 
+            <hgroup>  <!-- otro titulo que reconoce el navegador gracias a que con esto agrupamos los titulos con los que nos encuentran--> 
+              <h1>hola , este es tu perfil y tus actividades de esta semana son:</h1>
+            </hgroup>
+                    <p> %fecha%</p>
+          </article>
+          <aside> <!-- colocar sidebars (donde van las redes sociales y publicidad) --> 
+            <p>Sigueme en <a href= "http://www.twitter.com/kennycongorro">twitter</a> y <a href= "http://www.facebook.com/emirkenny"> facebook <a></p>
+          </aside>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div id="contenedorfooter">
+        <p> hola, soy un pie de pagina que quiere ser negro y flexible</p>
+      </div>
+    </footer>
+  </body>
+<html>
+

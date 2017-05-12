@@ -1,0 +1,25 @@
+{% extends "layouts/AllPages.html" %}
+
+{% block title %} Actividades {% endblock %}
+
+{% block insidetitle %} (ruta actual en el sitio), tu usuario es {{current_user.username}} {% endblock %}
+
+{% block contenido %} 
+
+
+<td>
+    <form action="{{ url_for('dbactividades') }}" method="POST">
+      <div class="form-group">
+      <label>inserta tarea 7</label>
+      <input class="form-control" placeholder="tarea 7" name="actividad7">
+      <label>inserta tarea 14</label>
+       <input class="form-control" placeholder="tarea 14" name="actividad14">
+      <button type="submit" class="btn btn-primary">submit</button>
+      </div>
+</form>
+</td>
+Tu actividad de la semana es: {{current_user.actividad_7}}
+
+Tu actividad larga es: {{current_user.actividad_14}} 
+
+{% endblock %}

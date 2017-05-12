@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- declaramos el documento como html5 --> 
+<html lang="es"> <!-- Informacion para los navegadores --> 
+	<head>  <!-- datos para el navegador, hojas de estilos, o scripts --> 
+		<meta charset= 'UTF-8'> <!-- metadatos= info para el navegaro cuando renderisa, hay muchos, ver cuales hay. el UTF-8 es para ascii con acentos --> 
+		<link rel="stylesheet" href="stylesheet.css"> <!-- linkeamos la hoja de datos css --> 
+	</head>
+
+	<body> <!-- Toda la info que esta en la pagina --> 
+		<div id="contenido"> <!-- div principal que teiene todo, se puede poner o no --> 
+			<header> <!-- indica el encabezado de la pagina --> 
+				<hgroup> <!-- Para que el navegador sepa que este es un titulo y nos pueda encontrar mas facilmente sin confundirse --> 
+					<h1>PROBANDO HTML5</h1>
+				</hgroup>
+				<div id="lista">
+					<nav> <!-- Para que puedan ingresar a alguna pagina en especifico desde el navegador --> 
+						<ul> <!-- lista desordenada, esta lista va dentro de el header --> 
+							<li>Inicio</li>
+							<li>Sobre mi</li>
+							<li>Videos de gatitos</li>
+							<li>Contacto</li>
+						</ul>	
+					</nav>
+				</div>
+			</header>
+			<section> <!-- para seo, adentro de eso los div que queramos --> 
+				<div id="textoprincipal">
+					<article>       <!--  --> 
+						<hgroup>  <!-- otro titulo que reconoce el navegador gracias a que con esto agrupamos los titulos con los que nos encuentran--> 
+							<h1>Formulario de contacto</h1>
+						</hgroup>
+						<form>
+							<label for="nombre">Nombre:</label><!-- el for debe coincidir con el nombre del id--> 
+							<input type="text" id="Nombre" placeholder= "Escribe tu nombre" required><!-- placeholder para texto en gris de guia // required para que no acepte el formulario sin ese campo--> 
+								<label for="email" >e-mail:</label>
+							<input type="email" id="email"placeholder= "Escribe tu e-mail"required>
+								<label for="edad">Edad:</label>
+							<input type="number" id="edad"placeholder= "tu edad con numeros" min="13" max="100">
+								<label for="calificacion">calificanos:</label>
+							<input type="range" id="calificacion" min="0" max="10" value = "0"><!-- definimos el rango maximo de divisiones-->
+								<label for="fecha">Fecha:</label>
+							<input type="date" id="fecha">
+							<input type="submit" value= "GO! :D" id="botonDatos">
+
+						</form>
+				</div>
+			</section>
+		</div>
+
+		<footer>
+			<canvas id='canvas'>
+				
+			</canvas>
+		</footer>
+	</body>
+<html>

@@ -1,0 +1,40 @@
+{% extends "layouts/AllPages.html" %}
+
+{% block title %} Full calendar {% endblock %}
+
+{% block customCSS %}
+    <link href='/static/vendor/fullcalendar/fullcalendar.css' rel='stylesheet' />
+    
+{% endblock %}
+
+
+{% block insidetitle %} full calendar example {% endblock %}
+
+{% block contenido %}
+    <div class="col-lg-2" id="external-events">
+        <h4>Draggable Events</h4>
+        <div class='fc-event'>{{usuario.actividad_7}}</div>
+        <div class='fc-event'>{{usuario.actividad_14}}</div>
+        <div class='fc-event'>
+            <div class="fc-content">
+                <span class="fc-time">10:30 AM</span> 
+                <span class="fc-title">Meeting</span>
+            </div>
+        </div>
+        <p>
+            <input type='checkbox' id='drop-remove' />
+            <label for='drop-remove'>remove after drop</label>
+        </p>
+    </div>
+    <div class="col-lg-8" id='calendar'><div class='fc-event'>{{usuario.actividad_7}}</div></div>
+
+
+{% endblock %} 
+
+{% block customJS %}
+        <script src='/static/vendor/fullcalendar/lib/jquery-ui.min.js'></script>
+        <script src='/static/vendor/fullcalendar/lib/moment.min.js'></script>
+        <script src='/static/vendor/fullcalendar/fullcalendar.js'></script>
+        <script src='/static/vendor/fullcalendar/usecalendar.js'></script>
+        <script src='/static/vendor/fullcalendar/locale/es.js'></script>
+{% endblock %}
